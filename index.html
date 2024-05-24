@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi Rupiah ke Dollar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>Konversi IDR -> USD</h1></header>
+    <form>
+      <input type="number" id="inp" /><br />
+      <button onclick="btn()">Convert</button>
+    </form>
+
+    <main>
+      <h3 id="dp"></h3>
+    </main>
+
+    <script>
+      //  const body = document.body();
+      //  body.append();
+      function btn() {
+        event.preventDefault();
+        var rupiah = document.getElementById("inp").value;
+        var display = document.getElementById("dp");
+        var satuDollar = rupiah / 16000;
+        if (satuDollar == 1 && satuDollar <= 10) {
+          display.innerHTML = `IDR = Rp.${rupiah} -> USD = $${satuDollar}.00`;
+        } else if (satuDollar >= 10) {
+          display.innerHTML = `IDR = Rp.${rupiah} -> USD = $${satuDollar}`;
+        } else {
+          display.innerHTML = `IDR = Rp.${rupiah} -> USD = $${satuDollar}`;
+        }
+      }
+    </script>
+  </body>
+</html>

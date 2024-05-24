@@ -1,0 +1,55 @@
+* {
+  margin: auto 0;
+  padding: 0;
+  font-family: helvetica;
+}
+
+body {
+  background-color: rgb(2, 13, 52);
+}
+
+h1 {
+  text-align: center;
+  margin: auto;
+  font-family: cursive;
+}
+
+form button {
+  margin: 10px;
+}
+
+form input,
+button {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+form,
+header,
+main,
+#dp {
+  margin: auto;
+  text-align: center;
+  background-color: rgb(25, 149, 191);
+  width: 50%;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+}
+
+input {
+  padding: 10px;
+}
+
+button {
+  font-size: 15px;
+  padding: 10px;
+}
+
+#dp {
+  background-color: aquamarine;
+  font-weight: 700;
+}
